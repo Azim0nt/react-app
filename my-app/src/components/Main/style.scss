@@ -1,0 +1,27 @@
+@import '../../assets/styles/settings';
+.body-v{
+    width: 100%;
+    height: 150vh;
+    .body-main{
+    width: 100%;
+    height: 1080px;
+    background: url('../../assets/images/bag.png') no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    .main{
+        padding: 200px;
+        #btn{
+            @extend %btn;
+            position: absolute;
+            left: 200px;
+            top: 500px;
+            z-index: 9;
+        }
+    }
+}
+    #video{
+        position: absolute;
+        right: 0;
+        top: 1000px;
+    }
+}

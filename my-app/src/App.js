@@ -1,8 +1,11 @@
 import {BrowserRouter} from 'react-router-dom'  
+import AllComponent from './components/AllComponents';
 function App() {
   return (
     <div className='App'>
-      <BrowserRouter></BrowserRouter>
+      <BrowserRouter>
+      <AllComponent/>
+      </BrowserRouter>
     </div>
   );
 }
