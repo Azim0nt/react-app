@@ -12,7 +12,6 @@ function Main() {
             </div>
         </div>
             <img src={Video} alt="Video" id='video'/>
-            <Excursion/>
         </div>
        
      );

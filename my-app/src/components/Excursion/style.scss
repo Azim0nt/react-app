@@ -1,20 +1,76 @@
 @import '../../assets/styles/settings';
-.body-excursion{
-    height: 150vh;
+
+.body-excursion {
+    height: 100vh;
     width: 80%;
     margin: 0 auto;
     margin-top: 150px;
     padding: 20px;
-    .top{
+
+    .top {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .left{
+
+        .left {
             color: $blue;
             font-weight: 700;
             font-size: 24px;
 
+        }
+
+        .right {
+            text-decoration: underline;
+        }
+    }
+
+    .bottom {
+        margin-top: 200px;
+        .cards {
+            width: 100%;
+            margin: 0 auto;
+            .values-wrapper {
+                display: grid;
+                grid-template-columns: 30% 30% 30%;
+                .value-item {
+                    background: url('../../assets/images/bag1.png') no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                    width: 90%;
+                    height: 500px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: end;
+                    padding: 10px;
+                    padding-bottom: 30px;
+                    border-radius: 20px;
+                    div{
+                      p{
+                        margin-bottom: 20px;
+                        color: $light;
+                    }
+                    #p-1{
+                    font-weight: 500;
+                    font-size: 12px;
+                    }
+                    #p-2{
+                        font-weight: 700;
+                        font-size: 14px;
+                        color: $yellow-b;
+                    }
+                    #p-3{
+                        font-weight: 500;
+                    font-size: 12px;
+                    }  
+                    }
+                    
+                    #btn{
+                        @extend %btn;
+                    }
+                }
+
+            }
         }
     }
 }
