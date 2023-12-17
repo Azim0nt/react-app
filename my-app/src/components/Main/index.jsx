@@ -1,6 +1,7 @@
 import './style.scss'
 import Title from '../../assets/images/заголовок.png'
 import Video from '../../assets/images/видео.png'
+import Excursion from '../Excursion';
 function Main() {
     return ( 
         <div className="body-v">
@@ -11,6 +12,7 @@ function Main() {
             </div>
         </div>
             <img src={Video} alt="Video" id='video'/>
+            <Excursion/>
         </div>
        
      );
