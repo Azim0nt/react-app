@@ -1,34 +1,45 @@
 @import '../../assets/styles/settings';
-.about-body{
+
+.about-body {
     width: 100%;
     height: 100vh;
-    .about{
+
+    .about {
         width: 100%;
         height: 100%;
-        .bag{
+
+        .bag {
             width: 70%;
             height: 100%;
-        }
-        .about-us{
-            position: absolute;
-            z-index: 9;
-            top: 340px;
-            right: 200px;
-            width: 500px;
-            height: 450px;
-            background-color:  #EDEDED;
-            border-radius: 10px;
-            padding: 50px;
-            #title{
-                color: $blue;
-                font-weight: 700;
-                font-size: 24px;
-            }
-            #subtitle{
-                font-weight: 800;
-                font-size: 14px;
-                color:#333333;
-                
+            display: flex;
+            background: url('../../assets/images/bag2.png') no-repeat;
+            background-position: center;
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            .about-us {
+                position: relative;
+                left: 1050px;
+                z-index: 9;
+                width: 500px;
+                height: 450px;
+                background-color: #EDEDED;
+                border-radius: 10px;
+                padding: 50px;
+
+                #title {
+                    color: $blue;
+                    font-weight: 700;
+                    font-size: 24px;
+                }
+
+                #subtitle {
+                    font-weight: 800;
+                    font-size: 14px;
+                    color: #333333;
+
+
+                }
             }
         }
     }

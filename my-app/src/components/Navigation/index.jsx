@@ -1,25 +1,25 @@
 import './style.scss';
 import Logo from '../../assets/icons/лого.png'
-import { Outlet, Link } from "react-router-dom"
+import { Outlet, Link, NavLink} from "react-router-dom"
 
 function Navigation() {
     return ( 
         <div id='body'>
             <nav id="navigation-wrapper">
                 <div className="left">
-                    <Link to={'/'}>
+                    <NavLink to={'/'}>
                     <img src={Logo} alt="Logo" />
-                    </Link>
+                    </NavLink>
                 </div>
                 <div className="right">
                         <ul>
-                            <li><Link to={'/main'}>Главная</Link></li>
-                            <li><Link to={'/excursion'}>Экскурсии</Link></li>
-                            <li><Link to={'/about'}>О нас</Link></li>
-                            <li><Link to={'/types'}>Виды</Link></li>
-                            <li><Link to={'/galery'}>Галерея</Link></li>
-                            <li><Link to={'/feedback'}>Отзывы</Link></li>
-                            <li><Link to={'/leave-feedback'}>Оставить вопрос</Link></li>
+                            <li><NavLink to={'/main'}>Главная</NavLink></li>
+                            <li><NavLink to={'/excursion'}>Экскурсии</NavLink></li>
+                            <li><NavLink to={'/about'}>О нас</NavLink></li>
+                            <li><NavLink to={'/types'}>Виды</NavLink></li>
+                            <li><NavLink to={'/gallery'}>Галерея</NavLink></li>
+                            <li><NavLink to={'/feedback'}>Отзывы</NavLink></li>
+                            <li><NavLink to={'/leave-feedback'}>Оставить вопрос</NavLink></li>
                         </ul>
                 </div>
             </nav>

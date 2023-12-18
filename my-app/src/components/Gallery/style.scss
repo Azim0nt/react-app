@@ -1,0 +1,31 @@
+@import '../../assets/styles/settings';
+
+.gallery-body {
+
+    .gallery {
+        .top {
+            padding: 100px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                color: $blue;
+                font-weight: 700;
+                font-size: 24px;
+
+            }
+
+            .right {
+                text-decoration: underline;
+            }
+        }
+
+        .bottom {
+            text-align: center;
+            padding: 25px;
+        }
+
+    }
+}

@@ -18,11 +18,18 @@
                 li{
                     display: inline-block;
                     padding: 10px;
+                    .active{
+                        color: $yellow-b;
+
+                    }
                     *{
                         transition: 0.5s;
                         text-decoration: none;
                         color: $light;
                         &:hover{
+                            color: $yellow-b;
+                        }
+                        &:active{
                             color: $yellow-b;
                         }
                     }
