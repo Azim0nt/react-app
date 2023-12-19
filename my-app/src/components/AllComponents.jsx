@@ -7,6 +7,7 @@ import Excursion from './Excursion'
 import Types from './Types'
 import Gallery from './Gallery';
 import Feedback from './Feedback';
+import LeaveFeedback from './LeaveFeedback';
 import NoPage from './NoPage'
 function AllComponent(props) {
     const location = useLocation()
@@ -20,6 +21,7 @@ function AllComponent(props) {
                 <Route path="/types" element={<Types />} />
                 <Route path="/gallery" element={<Gallery />} />
                 <Route path="/feedback" element={<Feedback />} />
+                <Route path="/leave-feedback" element={<LeaveFeedback />} />
                 <Route path="*" element={<NoPage />} />
             </Route>
         </Routes>
