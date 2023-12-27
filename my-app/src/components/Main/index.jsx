@@ -4,7 +4,6 @@ import Image1 from '../../assets/images/img-1.png'
 import Image6 from '../../assets/images/img-6.png'
 import Image7 from '../../assets/images/img-7.png'
 import Image3 from '../../assets/images/img-3.png'
-import Excursion from '../Excursion';
 import Marquee from 'react-fast-marquee';
 function Main() {
     return (

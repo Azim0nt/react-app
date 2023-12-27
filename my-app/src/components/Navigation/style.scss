@@ -4,12 +4,53 @@
     width: 100%;
     height: 80px;
     background-color: #333;
+    position: relative;
    #mobil-nav{
     display: none;
     width: 100%;
     height: 80px;
     justify-content: space-between;
     align-items: center;
+    padding-left: 20px;
+    #nav-icon{
+        background-color: #00000000;
+        @extend %btn;
+        padding: 5px 10px;
+    }
+    .burger-menu{
+        padding: 10px;
+        background-color: $dark;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 40;
+        width: 350px;
+        height: 150vh;
+        display: flex;
+        justify-content: end;
+        div{
+            ul{
+                margin-right: 50px;
+                list-style-type:none ;
+                .active{
+                    &:hover{
+                        color: $yellow-b;
+                        text-decoration: underline;
+                    }
+                }
+                li{
+                    text-align: end;
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                    a{
+                        text-decoration: none;
+                        color: $light;
+                        
+                    }
+                }
+            }
+        }
+    }
    }
     #navigation-wrapper{
         width: 80%;

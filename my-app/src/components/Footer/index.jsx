@@ -2,7 +2,7 @@ import './style.scss';
 import Logo from '../../assets/images/logo_color 1.png'
 import Icons from '../../assets/images/соц сети.png'
 function Footer() {
-    return ( 
+    return (
         <div className="footer-body">
             <div className="footer">
                 <img src={Logo} width={80} height={114} />
@@ -22,7 +22,7 @@ function Footer() {
                 </div>
             </div>
         </div>
-     );
+    );
 }
 
 export default Footer;

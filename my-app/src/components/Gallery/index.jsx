@@ -1,12 +1,5 @@
 import './style.scss'
-import Image1 from '../../assets/images/img-1.png'
-import Image2 from '../../assets/images/img-2.png'
-import Image3 from '../../assets/images/img-3.png'
-import Image4 from '../../assets/images/img-4.png'
-import Image5 from '../../assets/images/img-5.png'
-import Image6 from '../../assets/images/img-6.png'
-import Image7 from '../../assets/images/img-7.png'
-import Image8 from '../../assets/images/img-8.png'
+
 
 function Gallery() {
     return (

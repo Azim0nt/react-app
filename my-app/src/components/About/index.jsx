@@ -1,5 +1,4 @@
 import './style.scss'
-import Background from '../../assets/images/bag2.png';
 
 function About() {
     return (

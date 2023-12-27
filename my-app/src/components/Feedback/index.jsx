@@ -1,5 +1,4 @@
 import './style.scss'
-import feedbackImage from '../../assets/images/отзывы.png';
 import Marquee from 'react-fast-marquee';
 import Photo1 from '../../assets/images/photo1.png';
 import Photo2 from '../../assets/images/photo2.png';

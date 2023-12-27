@@ -1,6 +1,5 @@
 import './style.scss'
 import Values from "./Values.jsx"
-import Main from '../Main/index.jsx';
 function Excursion() {
     return ( 
         <div className="body-excursion">
