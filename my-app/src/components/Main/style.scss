@@ -1,61 +1,101 @@
 @import '../../assets/styles/settings';
-.body-v{
+
+.body-v {
     width: 100%;
     height: 120vh;
     position: relative;
-    .body-main{
-    width: 100%;
-    height: 1080px;
-    background: url('../../assets/images/bag.png') no-repeat;
-    background-position: center;
-    background-size: 100% 100%;
-    .main{
-        padding: 200px;
-        .text{
-            position: relative;
-            p{
-                color: $light;
+
+    .body-main {
+        width: 100%;
+        height: 900px;
+        background: url('../../assets/images/bag.png') no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        .main {
+            padding: 200px;
+
+            .text {
+                position: relative;
+
+                p {
+                    color: $light;
+                }
+
+                .title {
+                    font-weight: bold;
+                    font-size: 72px;
+                    line-height: 87px;
+                }
+
+                .subtitle {
+                    color: #00000000;
+                    font-weight: bold;
+                    -webkit-text-stroke-width: 1px;
+                    -webkit-text-stroke-color: $light;
+                    font-size: 96px;
+                    line-height: 117px;
+                }
+
+                .litle-text {
+                    color: $yellow-b;
+                    font-family: "mr_KindlyJasmineG";
+                    font-weight: 400;
+                    font-size: 64px;
+                    position: absolute;
+                    left: 500px;
+                    top: 50px;
+                }
             }
-            .title{
-                font-weight: bold;
-                font-size: 72px;
-                line-height: 87px;
-            }
-            .subtitle{
-                color: #00000000;
-                font-weight:bold;
-                -webkit-text-stroke-width: 1px; 
-                -webkit-text-stroke-color: $light; 
-                font-size: 96px;
-                line-height: 117px;
-            }
-            .litle-text{
-                color: $yellow-b;
-                font-family: "mr_KindlyJasmineG";
-                font-weight: 400;
-                font-size: 64px;
+
+            #btn {
+                @extend %btn;
                 position: absolute;
-                left: 500px;
-                top: 50px;
+                left: 200px;
+                top: 500px;
+                z-index: 9;
             }
-        }
-        #btn{
-            @extend %btn;
-            position: absolute;
-            left: 200px;
-            top: 500px;
-            z-index: 9;
         }
     }
-}
-    .marquee{
+
+    .marquee {
         position: absolute;
         right: 0;
         bottom: -90px;
-        img{
+
+        img {
             width: 360px;
             height: 227px;
             margin-right: 15px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .body-v {
+        width: 750px;
+        height: 150vh;
+        position: relative;
+
+        .body-main {
+            .main{
+                .text{
+                  margin-top: 50px;
+                .title{
+                    font-size: 54px;
+                }
+                .litle-text{
+                    font-size: 50px;
+                    left: 400px;
+                }
+                .subtitle{
+                    font-size: 70px;
+                }
+               }
+            }
+        }
+        .marquee{
+            bottom: 150px;
         }
     }
 }
