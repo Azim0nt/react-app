@@ -1,7 +1,7 @@
 import './style.scss';
+import React from 'react';
 import Logo from '../../assets/icons/лого.png'
-import { Outlet, Link, NavLink } from "react-router-dom"
-
+import { Outlet, NavLink } from "react-router-dom";
 function Navigation() {
     return (
         <div id='body'>
@@ -23,9 +23,9 @@ function Navigation() {
                     </ul>
                 </div>
             </nav>
-            <p id="mobil-nav">
-                <img src={Logo} alt="" /> 
-            </p>
+            <div id="mobil-nav">
+                
+            </div>
             <div id="outlet">
                 <Outlet />
             </div>

@@ -1,7 +1,5 @@
 @import '../../assets/styles/settings';
-$primary: #900;
-$enable-shadows: true;
-$prefix: "mo-";
+
 #body{
     width: 100%;
     height: 80px;
@@ -10,7 +8,8 @@ $prefix: "mo-";
     display: none;
     width: 100%;
     height: 80px;
-    
+    justify-content: space-between;
+    align-items: center;
    }
     #navigation-wrapper{
         width: 80%;
@@ -45,14 +44,14 @@ $prefix: "mo-";
         }
     }
 }
-@media(max-width:750px){
+@media(max-width:770px){
     #body{
         width: 750px;
         #navigation-wrapper{
             display: none;
         }
         #mobil-nav{
-            display: block;
+            display: flex;
         }
     }
 }
