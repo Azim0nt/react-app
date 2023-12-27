@@ -10,7 +10,31 @@
     background-size: 100% 100%;
     .main{
         padding: 200px;
-        
+        .text{
+            position: relative;
+            p{
+                color: $light;
+            }
+            .title{
+                font-weight: bold;
+                font-size: 72px;
+                line-height: 87px;
+            }
+            .subtitle{
+                color: #00000000;
+                font-weight: 900;
+                font-size: 96px;
+            }
+            .litle-text{
+                color: $yellow-b;
+                font-family: "mr_KindlyJasmineG";
+                font-weight: 400;
+                font-size: 64px;
+                position: absolute;
+                left: 500px;
+                top: 50px;
+            }
+        }
         #btn{
             @extend %btn;
             position: absolute;

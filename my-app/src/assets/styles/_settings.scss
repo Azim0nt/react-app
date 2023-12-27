@@ -1,4 +1,5 @@
-@use "./resets";
+@import url("https://db.onlinewebfonts.com/c/bf32b50f68681e20f23ab1f505b82cdd?family=mr_KindlyJasmineG");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&family=Montserrat&family=Poppins:wght@600&display=swap");
 @import "./samples";
 
 $warning: #ff6600;
@@ -11,6 +12,14 @@ $transparent:transparent;
 $yellow-b:#FFC700;
 $blue: #0499DD;
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: 0.1s;
+    font-family: "Montserrat", sans-serif;
+    
+}
 %link {
     @extend %link-style;
 }
