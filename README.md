@@ -1,8 +1,8 @@
 # react-app
 
-# open directory
+### open directory
 `cd my-app`
-# install modules
+### install modules
 `npm install`
-# start project
+### start project
 `npm start`
