@@ -1,7 +1,11 @@
 import './style.scss'
-import Title from '../../assets/images/заголовок.png'
-import Video from '../../assets/images/видео.png'
+import Image8 from '../../assets/images/img-8.png'
+import Image1 from '../../assets/images/img-1.png'
+import Image6 from '../../assets/images/img-6.png'
+import Image7 from '../../assets/images/img-7.png'
+import Image3 from '../../assets/images/img-3.png'
 import Excursion from '../Excursion';
+import Marquee from 'react-fast-marquee';
 function Main() {
     return (
         <div className="body-v">
@@ -15,7 +19,13 @@ function Main() {
                     <button id='btn'>К экскурсиям</button>
                 </div>
             </div>
-            <img src={Video} alt="Video" id='video' />
+            <Marquee className='marquee' direction='right'>
+                <img src={Image1} alt="" />
+                <img src={Image8} alt="" /> 
+                <img src={Image6} alt="" /> 
+                <img src={Image7} alt="" />  
+                <img src={Image3} alt="" />  
+                </Marquee>
         </div>
 
     );

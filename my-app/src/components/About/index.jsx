@@ -1,5 +1,6 @@
 import './style.scss'
-import Background from '../../assets/images/bag2.png'
+import Background from '../../assets/images/bag2.png';
+
 function About() {
     return (
         <div className="about-body">

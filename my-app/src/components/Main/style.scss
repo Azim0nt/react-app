@@ -1,7 +1,8 @@
 @import '../../assets/styles/settings';
 .body-v{
     width: 100%;
-    height: 150vh;
+    height: 120vh;
+    position: relative;
     .body-main{
     width: 100%;
     height: 1080px;
@@ -22,8 +23,11 @@
             }
             .subtitle{
                 color: #00000000;
-                font-weight: 900;
+                font-weight:bold;
+                -webkit-text-stroke-width: 1px; 
+                -webkit-text-stroke-color: $light; 
                 font-size: 96px;
+                line-height: 117px;
             }
             .litle-text{
                 color: $yellow-b;
@@ -44,9 +48,14 @@
         }
     }
 }
-    #video{
+    .marquee{
         position: absolute;
         right: 0;
-        top: 1000px;
+        bottom: -90px;
+        img{
+            width: 360px;
+            height: 227px;
+            margin-right: 15px;
+        }
     }
 }
