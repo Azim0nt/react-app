@@ -23,7 +23,42 @@
 
         .bottom {
             display: flex;
-            justify-content: end;
+            .marquee{
+                height: 550px;
+
+                .f-1, .f-2{
+                    width: 700px;
+                    height: 325px;
+                    background-color: #EDEDED;
+                    display: grid;
+                    grid-template-columns: 35% 65%;
+                    margin-right:25px ;
+                    font-size: 14px;
+                    font-weight: 100;
+                    border-radius: 15px;
+                    .right{
+                        height: 100%;
+                        .title{
+                            height: 20px;
+                            font-weight: 600;
+                            margin-bottom: 10px;
+                            margin-top: 60px;
+                        }
+                        .about-they{
+                            height: 100%;
+                        }
+                    }
+                    .left{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        img{
+                            width: 200px;
+                            height: 200px;
+                        }
+                    }
+                }
+            }
         }
     }
 }
