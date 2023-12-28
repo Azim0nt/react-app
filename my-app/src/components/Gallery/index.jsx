@@ -30,6 +30,16 @@ function Gallery() {
                         <div className="bottom-r"></div>
                     </div>
                 </div>
+                <div className="bottom-1">
+                    <div className="left"></div>
+                    <div className="right">
+                        <div className="top-r">
+                            <div className="left-r"></div>
+                            <div className="right-r"></div>
+                        </div>
+                        <div className="bottom-r"></div>
+                    </div>
+                </div>
             </div>
 
         </div>
