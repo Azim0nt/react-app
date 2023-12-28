@@ -1,6 +1,7 @@
 @import '../../assets/styles/settings';
 
 .about-body {
+    position: relative;
     width: 100%;
     height: 100vh;
 
@@ -18,7 +19,7 @@
             display: flex;
             align-items: center;
             .about-us {
-                position: relative;
+                position: absolute;
                 left: 1050px;
                 z-index: 9;
                 width: 500px;
@@ -40,6 +41,21 @@
 
 
                 }
+            }
+        }
+    }
+}
+@media(max-width:768px){
+    .about-body{
+        width: 750px;
+        height: 100vh;
+        .about{
+            .bag{
+                width: 60%;
+                .about-us{
+                    left: 100px;
+                }
+
             }
         }
     }

@@ -67,3 +67,29 @@
         }
     }
 }
+@media(max-width:768px){
+    .types-about{
+        width: 750px;
+        margin-top: 30px;
+        .types{
+            width: 100%;
+            margin: 0 auto;
+            .top{
+                margin-bottom: 50px;
+                padding-left: 20px;
+            }
+            .bottom{
+                .cards{
+                    padding-right: 20px;
+                    .values-wrapper{
+                        display: block;
+                        .value-item{
+                            padding-right: 100px;
+                            padding-left: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

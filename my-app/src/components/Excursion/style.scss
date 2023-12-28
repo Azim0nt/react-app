@@ -33,6 +33,7 @@
             .values-wrapper {
                 display: grid;
                 grid-template-columns: 30% 30% 30%;
+                
                 .value-item {
                     background: url('../../assets/images/bag1.png') no-repeat;
                     background-position: center;
@@ -72,5 +73,18 @@
 
             }
         }
+    }
+}
+@media(max-width:768px){
+    .body-excursion{
+        width: 750px;
+       .bottom{
+        margin-top: 100px;
+        .cards{
+            .values-wrapper{
+                grid-template-columns:repeat(3, 450px) ;
+            }
+        }
+       }
     }
 }
