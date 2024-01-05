@@ -79,6 +79,7 @@
 
         .body-main {
             .main{
+                padding: 100px 1px 1px 100px;
                 .text{
                   margin-top: 50px;
                 .title{
@@ -86,11 +87,16 @@
                 }
                 .litle-text{
                     font-size: 50px;
-                    left: 400px;
+                    left: 300px;
+                    width: 100%;
                 }
                 .subtitle{
                     font-size: 70px;
                 }
+               }
+               #btn{
+                top: 350px;
+                left: 100px;
                }
             }
         }
