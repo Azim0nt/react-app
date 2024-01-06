@@ -5,8 +5,15 @@ import Image6 from '../../assets/images/img-6.png'
 import Image7 from '../../assets/images/img-7.png'
 import Image3 from '../../assets/images/img-3.png'
 import Marquee from 'react-fast-marquee';
+import Excursion from '../Excursion'
+import About from '../About'
+import Types from '../Types'
+import Gallery from '../Gallery'
+import Feedback from '../Feedback'
+import LeaveFeedback from '../LeaveFeedback'
 function Main() {
     return (
+        <>
         <div className="body-v">
             <div className='body-main'>
                 <div className="main">
@@ -26,7 +33,13 @@ function Main() {
                 <img src={Image3} alt="" />  
                 </Marquee>
         </div>
-
+        <Excursion/>
+        <About/>
+        <Types/>
+        <Gallery/>
+        <Feedback/>
+        <LeaveFeedback/>
+        </>
     );
 }
 

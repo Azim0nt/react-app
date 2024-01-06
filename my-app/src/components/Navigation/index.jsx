@@ -10,6 +10,7 @@ function Navigation() {
     };
     return (
         <div id='body'>
+             <Outlet />
             <nav id="navigation-wrapper">
                 <div className="left">
                     <NavLink to={'/'}>
@@ -19,12 +20,7 @@ function Navigation() {
                 <div className="right">
                     <ul>
                         <li><NavLink to={'/main'}>Главная</NavLink></li>
-                        <li><NavLink to={'/excursion'}>Экскурсии</NavLink></li>
-                        <li><NavLink to={'/about'}>О нас</NavLink></li>
-                        <li><NavLink to={'/types'}>Виды</NavLink></li>
-                        <li><NavLink to={'/gallery'}>Галерея</NavLink></li>
-                        <li><NavLink to={'/feedback'}>Отзывы</NavLink></li>
-                        <li><NavLink to={'/leave-feedback'}>Оставить вопрос</NavLink></li>
+                        <li><NavLink to={'/excursions'}>Экскурсии</NavLink></li>
                     </ul>
                 </div>
             </nav>
@@ -39,19 +35,14 @@ function Navigation() {
 
                         <ul>
                             <li><NavLink to={'/main'}>Главная</NavLink></li>
-                            <li><NavLink to={'/excursion'}>Экскурсии</NavLink></li>
-                            <li><NavLink to={'/about'}>О нас</NavLink></li>
-                            <li><NavLink to={'/types'}>Виды</NavLink></li>
-                            <li><NavLink to={'/gallery'}>Галерея</NavLink></li>
-                            <li><NavLink to={'/feedback'}>Отзывы</NavLink></li>
-                            <li><NavLink to={'/leave-feedback'}>Оставить вопрос</NavLink></li>
+                            
                         </ul>
                         </div>
                     </div>
                 )}
             </div>
             <div id="outlet">
-                <Outlet />
+               
             </div>
         </div>
     );
