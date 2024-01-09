@@ -131,30 +131,49 @@
             }
         }
         .bottom-1{
-            background: red;
+           display: none;
             width: 90%;
             margin: 0 auto;
             height: 560px;
-            display: flex;
+            
             justify-content: space-around;
             .left{
                 width: 205px;
                 height: 560px;
-                background-color: cyan;
+                background: url('../../assets/images/img-5.png') no-repeat;
+                background-size: cover;
             }
             .right{
+                *{
+                    border-radius: 10px;
+                }
                 .top-r{
                     width: 600px;
                     height: 264px;
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    background-color: darkslategray;
+                    display: flex;
+                  
                     gap: 20px;
+                    justify-content: space-around;
                     .left-r{
                         width: 220px;
                         height: 264px;
-                        back
+                        background: url('../../assets/images/img-6.png') no-repeat;
+                        background-size: cover;
                     }
+                    .right-r{
+                        width: 220px;
+                        height: 264px;
+                        background: url('../../assets/images/img-7.png') no-repeat;
+                        background-size: cover;
+                    }
+                }
+                .bottom-r{
+                    width: 530px;
+                    margin: 0 auto;
+                    height: 283px;
+                    margin-top: 10px;
+                    background: url('../../assets/images/img-8.png') no-repeat;
+                    background-size: cover;
                 }
             }
         }
@@ -165,6 +184,9 @@
         .gallery{
             .bottom{
                 display: none;
+            }
+            .bottom-1{
+                display: flex;
             }
         }
     }
