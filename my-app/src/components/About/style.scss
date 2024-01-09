@@ -45,17 +45,25 @@
         }
     }
 }
-@media(max-width:768px){
+ 
+@media(max-width: $x-large-screen){
     .about-body{
-        width: 750px;
-        height: 100vh;
         .about{
             .bag{
-                width: 60%;
                 .about-us{
-                    left: 100px;
+                    left: 800px;
                 }
-
+            }
+        }
+    }
+}
+@media(max-width: $large-screen){
+    .about-body{
+        .about{
+            .bag{
+                .about-us{
+                    left: 450px;
+                }
             }
         }
     }

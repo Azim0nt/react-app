@@ -61,7 +61,7 @@
     .marquee {
         position: absolute;
         right: 0;
-        bottom: -90px;
+        bottom: 150px;
 
         img {
             width: 360px;
@@ -71,37 +71,15 @@
     }
 }
 
-@media (max-width: 768px) {
-    .body-v {
-        width: 750px;
-        height: 150vh;
-        position: relative;
-
-        .body-main {
+@media(max-width: $large-screen){
+    .body-v{
+        .body-main{
             .main{
-                padding: 100px 1px 1px 100px;
-                .text{
-                  margin-top: 50px;
-                .title{
-                    font-size: 54px;
+                padding: 200px  10px 10px  50px;
+                #btn{
+                    left: 100px;
                 }
-                .litle-text{
-                    font-size: 50px;
-                    left: 300px;
-                    width: 100%;
-                }
-                .subtitle{
-                    font-size: 70px;
-                }
-               }
-               #btn{
-                top: 350px;
-                left: 100px;
-               }
             }
-        }
-        .marquee{
-            bottom: 150px;
         }
     }
 }

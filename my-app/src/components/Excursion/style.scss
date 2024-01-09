@@ -2,13 +2,14 @@
 
 .body-excursion {
     height: 100vh;
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 150px;
-    padding: 20px;
+    
 
     .top {
         width: 100%;
+        padding: 40px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -32,7 +33,7 @@
             margin: 0 auto;
             .values-wrapper {
                 display: grid;
-                grid-template-columns: 30% 30% 30%;
+                grid-template-columns: repeat(3, 1fr);
                 
                 .value-item {
                     background: url('../../assets/images/bag1.png') no-repeat;
@@ -74,18 +75,5 @@
 
             }
         }
-    }
-}
-@media(max-width:768px){
-    .body-excursion{
-        width: 750px;
-       .bottom{
-        margin-top: 100px;
-        .cards{
-            .values-wrapper{
-                grid-template-columns:repeat(3, 450px) ;
-            }
-        }
-       }
     }
 }
